@@ -134,10 +134,10 @@ public class frmNodos extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnApilar;
-    private javax.swing.JButton btnEncolar;
+    public javax.swing.JButton btnApilar;
+    public javax.swing.JButton btnEncolar;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField txtDato;
-    private javax.swing.JTextField txtLista;
+    public javax.swing.JTextField txtDato;
+    public javax.swing.JTextField txtLista;
     // End of variables declaration//GEN-END:variables
 }

@@ -1,7 +1,6 @@
 
 package Modelos;
-import Vistas.frmNodos;
-import Vistas.frmPrincipal;
+
 import javax.swing.JOptionPane;
 
 public class Lista {
@@ -9,6 +8,9 @@ public class Lista {
     Nodo auxiliar;
     String cadena = "";
     
+    public void Apilar(){
+        
+    }
     public void Apilar(int dato)
     {
         Nodo nuevoNodo = new Nodo(dato);
@@ -26,12 +28,14 @@ public class Lista {
     public String Listar()
     {
         auxiliar = primero;
+        cadena = "";
         while(auxiliar!=null)
         {
-            cadena = cadena + auxiliar.getDato();
+            
+            cadena = cadena +"("+ auxiliar.getDato()+") ";
             auxiliar = auxiliar.siguiente;
         }
-        return "" ;
+        return cadena;
     }
 }
 
