@@ -25,6 +25,23 @@ public class Lista {
         }
         JOptionPane.showMessageDialog(null, "Nodo APILADO");
     }
+    
+    public void Encolar(int dato)
+    {
+        Nodo nuevoNodo = new Nodo(dato);
+        if(primero == null)
+        {
+            primero = nuevoNodo;
+        }
+        else
+        {
+               
+            primero.siguiente = nuevoNodo;
+            nuevoNodo = primero;
+        }
+        
+        JOptionPane.showMessageDialog(null, "Nodo Encolado");
+    }
     public String Listar()
     {
         auxiliar = primero;
